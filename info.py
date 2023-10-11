@@ -25,10 +25,9 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-
-PICS = (environ.get('PICS', '')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://graph.org/file/cbd9e4cba1f0f5f8e2d29.jpg https://graph.org/file/bccb772d2c9f4e8ebe4c1.jpg https://graph.org/file/163186d31cc1eaa5978c9.jpg https://graph.org/file/aad918485ba5b299c2fd6.jpg https://graph.org/file/6e66da1fcae6c0db91b19.jpg https://graph.org/file/5789c7f615b745c7adbb4.jpg https://graph.org/file/9b68f76e8c901e943f170.jpg https://graph.org/file/2c58f9bacbcfea80d980a.jpg https://graph.org/file/dbad69bd40da4bada4a22.jpg https://graph.org/file/a0e7073b34c7e30374737.jpg https://graph.org/file/1240d75e1f8fbb20e5f6c.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/ilove_ram/139")
+MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/6f55d902f9bf2d0afd4bb.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
