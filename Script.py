@@ -676,11 +676,11 @@ special Thanks To ❤️ Developers -
 
 -Dev 1 [Owner of this bot ]<a href='https://t.me/R_KOHLI'>♥⁠╣𝑰𝒕𝒛 𝒎𝒆 𝒕𝒈⁠╠⁠♥</a>
 
--Dev 2 <a href='https://t.me/vjbots_bot'>VJ</a>
+-Dev 2 <a href='https://t.me/KK_BOTS'>VJ</a>
 
--Dev 3 <a href='https://t.me/vj_botz>Jᴏᴇʟ </> TɢX</a>
+-Dev 3 <a href='https://t.me/movie_a1>Jᴏᴇʟ </> TɢX</a>
 
-- Dev 4 <a href='https://t.me/vj_bots'>TEAM VJ</a>
+- Dev 4 <a href='https://t.me/movie_on1'>TEAM VJ</a>
 """
 
 
