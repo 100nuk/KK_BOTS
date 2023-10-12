@@ -30,8 +30,8 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('✪ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/DK_update"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/+qUk9BEId5Lw3MzM1')
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url="https://t.me/DK_update"),
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url='https://t.me/+qUk9BEId5Lw3MzM1')
                 ],[
                   InlineKeyboardButton('𒌍𒆜𓆩𝑲𝑲_𝑩𝑶𝑻𝑺𓆪ꪾ𒆜𒌍', url='https://t.me/KK_BOTS')
                 ],[
@@ -50,12 +50,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/+qUk9BEId5Lw3MzM1')
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑬𝒂𝒓𝒏 𝑴𝒐𝒏𝒆𝒚𓆪ꪾ𒆜𒌍', callback_data="shortlink_info"),
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url='https://t.me/+qUk9BEId5Lw3MzM1')
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑯𝒆𝒍𝒑𓆪ꪾ𒆜𒌍', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                   InlineKeyboardButton('𒌍𒆜𓆩𝑲𝑲_𝑩𝑶𝑻𝑺𓆪ꪾ𒆜𒌍', url='https://t.me/KK_BOTS')
@@ -104,12 +104,12 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=CHNL_LNK)
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑬𝒂𝒓𝒏 𝑴𝒐𝒏𝒆𝒚𓆪ꪾ𒆜𒌍', callback_data="shortlink_info"),
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑯𝒆𝒍𝒑𓆪ꪾ𒆜𒌍', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                   InlineKeyboardButton('𒌍𒆜𓆩𝑲𝑲_𝑩𝑶𝑻𝑺𓆪ꪾ𒆜𒌍', url='https://t.me/KK_BOTS')
@@ -166,7 +166,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                                InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
                                 InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/KK_BOTS")
@@ -188,7 +188,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                          InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                        ],[
                           InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
@@ -347,7 +347,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                      InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
                       InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
                       InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
@@ -413,7 +413,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                      InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
                       InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
                       InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
@@ -476,7 +476,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+              InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
            ],[
               InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
