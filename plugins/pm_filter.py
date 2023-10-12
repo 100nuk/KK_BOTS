@@ -1264,8 +1264,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𒌍𒆜𓆩𝑭𝒂𝒔𝒕 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅𓆪ꪾ𒆜𒌍", url=lazy_download),  # we download Link
+                                                    InlineKeyboardButton('𒌍𒆜𓆩𝑾𝒂𝒕𝒄𝒉 𝑶𝒏𝒍𝒊𝒏𝒆𓆪ꪾ𒆜𒌍', url=lazy_stream)]])  # web stream Link
             )
             await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
@@ -1291,15 +1291,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑬𝒂𝒓𝒏 𝑴𝒐𝒏𝒆𝒚𓆪ꪾ𒆜𒌍', callback_data="shortlink_info"),
                     InlineKeyboardButton('𒌍𒆜𓆩𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑯𝒆𝒍𝒑𓆪ꪾ𒆜𒌍', callback_data='help'),
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒃𝒐𝒖𝒕𓆪ꪾ𒆜𒌍', callback_data='about')
                 ],[
-                  InlineKeyboardButton('𒌍𒆜𓆩𝑲𝑲_𝑩𝑶𝑻𝑺𓆪ꪾ𒆜𒌍', callback_data='source')
+                  InlineKeyboardButton('𒌍𒆜𓆩𝑲𝑲_𝑩𝑶𝑻𝑺𓆪ꪾ𒆜𒌍', url='https://t.me/KK_BOTS')
                 ],[
                     InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                   ]]
