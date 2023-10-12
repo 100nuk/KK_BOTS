@@ -35,7 +35,7 @@ async def start(client, message):
                 ],[
                   InlineKeyboardButton('𒌍𒆜𓆩𝑲𝑲_𝑩𝑶𝑻𝑺𓆪ꪾ𒆜𒌍', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -56,11 +56,11 @@ async def start(client, message):
                     InlineKeyboardButton('𒌍𒆜𓆩𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url='https://t.me/+qUk9BEId5Lw3MzM1')
                 ],[
                     InlineKeyboardButton('𒌍𒆜𓆩𝑯𝒆𝒍𝒑𓆪ꪾ𒆜𒌍', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒃𝒐𝒖𝒕𓆪ꪾ𒆜𒌍', callback_data='about')
                 ],[
                   InlineKeyboardButton('𒌍𒆜𓆩𝑲𝑲_𝑩𝑶𝑻𝑺𓆪ꪾ𒆜𒌍', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEDbD5lJjbfX6hEyoONWpVkGbiMYF463QACJwEAAsiUZBTiPWKAkUSmmjAE") 
@@ -110,11 +110,11 @@ async def start(client, message):
                     InlineKeyboardButton('𒌍𒆜𓆩𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                 ],[
                     InlineKeyboardButton('𒌍𒆜𓆩𝑯𝒆𝒍𝒑𓆪ꪾ𒆜𒌍', callback_data='help'),
-                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒃𝒐𝒖𝒕𓆪ꪾ𒆜𒌍', callback_data='about')
                 ],[
                   InlineKeyboardButton('𒌍𒆜𓆩𝑲𝑲_𝑩𝑶𝑻𝑺𓆪ꪾ𒆜𒌍', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
@@ -167,7 +167,7 @@ async def start(client, message):
                         [
                             [
                                 InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                                InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                             ],[
                                 InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/KK_BOTS")
                             ],
@@ -189,7 +189,7 @@ async def start(client, message):
                         [
                          [
                           InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                        ],[
                           InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
                          ],[ 
@@ -348,7 +348,7 @@ async def start(client, message):
                     [
                      [
                       InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                      InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                    ],[
                       InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
                      ],
@@ -414,7 +414,7 @@ async def start(client, message):
                     [
                      [
                       InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                      InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                    ],[
                       InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
                      ],
@@ -477,7 +477,7 @@ async def start(client, message):
             [
              [
               InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
-              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+              InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
            ],[
               InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
              ],
