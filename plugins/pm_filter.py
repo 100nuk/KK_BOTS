@@ -1202,7 +1202,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/+qUk9BEId5Lw3MzM1")
+                 InlineKeyboardButton("𒌍𒆜𓆩𝑹𝒆𝒒𝒖𝒆𝒔𝒕 𝑮𝒓𝒐𝒖𝒑 𝑳𝒊𝒏𝒌𓆪ꪾ𒆜𒌍", url="https://t.me/+qUk9BEId5Lw3MzM1")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1271,8 +1271,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𒌍𒆜𓆩𝑭𝒂𝒔𝒕 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅𓆪ꪾ𒆜𒌍", url=lazy_download),  # we download Link
+                                                    InlineKeyboardButton('𒌍𒆜𓆩𝑾𝒂𝒕𝒄𝒉 𝑶𝒏𝒍𝒊𝒏𝒆𓆪ꪾ𒆜𒌍', url=lazy_stream)]])  # web stream Link
             )
         except Exception as e:
             print(e)  # print the error message
