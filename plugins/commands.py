@@ -169,10 +169,10 @@ async def start(client, message):
                                 InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
                                 InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/KK_BOTS")
+                                InlineKeyboardButton('𒌍𒆜𓆩𝐵𝑜𝑡 𝑂𝑤𝑛𝑒𝑟𓆪ꪾ𒆜𒌍', url="https://t.me/KK_BOTS")
                             ],
                             [
-                                InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('𒌍𒆜𓆩𝑊𝑎𝑡𝑐ℎ 𝑂𝑛𝑙𝑖𝑛𝑒𓆪ꪾ𒆜𒌍', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -191,9 +191,9 @@ async def start(client, message):
                           InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
                           InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                        ],[
-                          InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
+                          InlineKeyboardButton("𒌍𒆜𓆩𝐵𝑜𝑡 𝑂𝑤𝑛𝑒𝑟𓆪ꪾ𒆜𒌍", url="t.me/KK_BOTS")
                          ],[ 
-                            InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                            InlineKeyboardButton('𒌍𒆜𓆩𝑊𝑎𝑡𝑐ℎ 𝑂𝑛𝑙𝑖𝑛𝑒𓆪ꪾ𒆜𒌍', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -350,10 +350,10 @@ async def start(client, message):
                       InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
                       InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
+                      InlineKeyboardButton("𒌍𒆜𓆩𝐵𝑜𝑡 𝑂𝑤𝑛𝑒𝑟𓆪ꪾ𒆜𒌍", url="t.me/KK_BOTS")
                      ],
                      [
-                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                        InlineKeyboardButton('𒌍𒆜𓆩𝑊𝑎𝑡𝑐ℎ 𝑂𝑛𝑙𝑖𝑛𝑒𓆪ꪾ𒆜𒌍', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
 
                      ]
                     ]
@@ -416,10 +416,10 @@ async def start(client, message):
                       InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
                       InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
+                      InlineKeyboardButton("𒌍𒆜𓆩𝐵𝑜𝑡 𝑂𝑤𝑛𝑒𝑟𓆪ꪾ𒆜𒌍", url="t.me/KK_BOTS")
                      ],
                      [
-                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                        InlineKeyboardButton('𒌍𒆜𓆩𝑊𝑎𝑡𝑐ℎ 𝑂𝑛𝑙𝑖𝑛𝑒𓆪ꪾ𒆜𒌍', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                      ]
                     ]
                 )
@@ -479,10 +479,10 @@ async def start(client, message):
               InlineKeyboardButton('𒌍𒆜𓆩𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'https://t.me/{SUPPORT_CHAT}'),
               InlineKeyboardButton('𒌍𒆜𓆩𝑱𝒐𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒍𝒆𓆪ꪾ𒆜𒌍', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KK_BOTS")
+              InlineKeyboardButton("𒌍𒆜𓆩𝐵𝑜𝑡 𝑂𝑤𝑛𝑒𝑟𓆪ꪾ𒆜𒌍", url="t.me/KK_BOTS")
              ],
              [
-              InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('𒌍𒆜𓆩𝑊𝑎𝑡𝑐ℎ 𝑂𝑛𝑙𝑖𝑛𝑒𓆪ꪾ𒆜𒌍', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
