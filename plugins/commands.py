@@ -30,12 +30,12 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('𓆩sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ𓆪ꪾ', url="https://t.me/DK_update"),
-                    InlineKeyboardButton('𓆩ᴍᴏᴠɪʀ ɢʀᴏᴜᴘ𓆪ꪾ', url='https://t.me/+qUk9BEId5Lw3MzM1')
+                    InlineKeyboardButton('● sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url="https://t.me/DK_update"),
+                    InlineKeyboardButton('● ᴍᴏᴠɪʀ ɢʀᴏᴜᴘ', url='https://t.me/+qUk9BEId5Lw3MzM1')
                 ],[
-                  InlineKeyboardButton('𓆩ᴋᴋ ʙᴏᴛs𓆪ꪾ', url='https://t.me/KK_BOTS')
+                  InlineKeyboardButton('● ᴋᴋ ʙᴏᴛs', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('𓆩ᴊᴏɪɴ ᴄʜᴀɴɴʟ𓆪ꪾ', url=CHNL_LNK)
+                    InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟ', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -52,15 +52,15 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('𓆩ᴘʀɪᴍᴇ𓆪ꪾ', callback_data="shortlink_info"),
-                    InlineKeyboardButton('𓆩ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ𓆪ꪾ', url='https://t.me/+qUk9BEId5Lw3MzM1')
+                    InlineKeyboardButton('● ᴘʀɪᴍᴇ', callback_data="shortlink_info"),
+                    InlineKeyboardButton('● ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+qUk9BEId5Lw3MzM1')
                 ],[
-                    InlineKeyboardButton('𓆩ʜᴇʟᴘ𓆪ꪾ', callback_data='help'),
-                    InlineKeyboardButton('𓆩ᴀʙᴏᴜᴛ𓆪ꪾ', callback_data='about')
+                    InlineKeyboardButton('● ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('● ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
-                  InlineKeyboardButton('𓆩ᴋᴋ ʙᴏᴛᴅ𓆪ꪾ', url='https://t.me/KK_BOTS')
+                  InlineKeyboardButton('● ᴋᴋ ʙᴏᴛᴅ', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('𓆩ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ𓆪ꪾ', url=CHNL_LNK)
+                    InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEDbD5lJjbfX6hEyoONWpVkGbiMYF463QACJwEAAsiUZBTiPWKAkUSmmjAE") 
@@ -106,15 +106,15 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('𓆩ᴘʀɪᴍᴇ𓆪ꪾ', callback_data="shortlink_info"),
-                    InlineKeyboardButton('𓆩ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ𓆪ꪾ', url=CHNL_LNK)
+                    InlineKeyboardButton('● ᴘʀɪᴍᴇ', callback_data="shortlink_info"),
+                    InlineKeyboardButton('● ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+qUk9BEId5Lw3MzM1')
                 ],[
-                    InlineKeyboardButton('𓆩ʜᴇʟᴘ𓆪ꪾ', callback_data='help'),
-                    InlineKeyboardButton('𓆩ᴀʙᴏᴜᴛ𓆪ꪾ', callback_data='about')
+                    InlineKeyboardButton('● ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('● ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
-                  InlineKeyboardButton('𓆩ᴋᴋ ʙᴏᴛs𓆪ꪾ', url='https://t.me/KK_BOTS')
+                  InlineKeyboardButton('● ᴋᴋ ʙᴏᴛᴅ', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('𓆩ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ𓆪ꪾ', url=CHNL_LNK)
+                    InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
