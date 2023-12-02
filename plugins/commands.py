@@ -28,7 +28,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('● ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('● sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url="https://t.me/DK_update"),
                     InlineKeyboardButton('● ᴍᴏᴠɪʀ ɢʀᴏᴜᴘ', url='https://t.me/+qUk9BEId5Lw3MzM1')
@@ -50,7 +50,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('● ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('● ᴘʀɪᴍᴇ', callback_data="shortlink_info"),
                     InlineKeyboardButton('● ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+qUk9BEId5Lw3MzM1')
@@ -104,7 +104,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('𒌍𒆜𓆩𝑨𝒅𝒅 𝑴𝒆 𝒀𝒐𝒖𝒓 𝑮𝒓𝒐𝒖𝒑𓆪ꪾ𒆜𒌍', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('● ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('● ᴘʀɪᴍᴇ', callback_data="shortlink_info"),
                     InlineKeyboardButton('● ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+qUk9BEId5Lw3MzM1')
@@ -166,13 +166,13 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('𓆩sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ𓆪ꪾ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                                InlineKeyboardButton('𓆩ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ𓆪ꪾ', url=CHNL_LNK)
+                                InlineKeyboardButton('● sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                                InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton('𓆩ʙᴏᴛ ᴏᴡɴᴇʀ𓆪ꪾ', url="https://t.me/KK_BOTS")
+                                InlineKeyboardButton('● ʙᴏᴛ ᴏᴡɴᴇʀ', url="https://t.me/KK_BOTS")
                             ],
                             [
-                                InlineKeyboardButton('𓆩ᴡᴀᴛᴄʜ ᴏɴʟɪɴ𓆪ꪾ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('● ᴡᴀᴛᴄʜ ᴏɴʟɪɴ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -188,12 +188,12 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('𓆩sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ𓆪ꪾ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                          InlineKeyboardButton('𓆩ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ𓆪ꪾ', url=CHNL_LNK)
+                          InlineKeyboardButton('● sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                          InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', url=CHNL_LNK)
                        ],[
-                          InlineKeyboardButton("𓆩ʙᴏᴛ ᴏᴡɴᴇʀ𓆪ꪾ", url="t.me/KK_BOTS")
+                          InlineKeyboardButton("● ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/KK_BOTS")
                          ],[ 
-                            InlineKeyboardButton('𓆩ᴡᴀᴛᴄʜ ᴏɴʟɪɴ𓆪ꪾ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                            InlineKeyboardButton('● ᴡᴀᴛᴄʜ ᴏɴʟɪɴ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -347,13 +347,13 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('𓆩sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ𓆪ꪾ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('𓆩ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ𓆪ꪾ', url=CHNL_LNK)
+                      InlineKeyboardButton('● sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                      InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("𓆩ʙᴏᴛ ᴏᴡɴᴇʀ𓆪ꪾ", url="t.me/KK_BOTS")
+                      InlineKeyboardButton("● ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/KK_BOTS")
                      ],
                      [
-                        InlineKeyboardButton('𓆩ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ𓆪ꪾ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                        InlineKeyboardButton('● ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
 
                      ]
                     ]
@@ -413,13 +413,13 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('𓆩sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ𓆪ꪾ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('𓆩ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ𓆪ꪾ', url=CHNL_LNK)
+                      InlineKeyboardButton('● sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                      InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("𓆩ʙᴏᴛ ᴏᴡɴᴇʀ𓆪ꪾ", url="t.me/KK_BOTS")
+                      InlineKeyboardButton("● ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/KK_BOTS")
                      ],
                      [
-                        InlineKeyboardButton('𓆩ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ𓆪ꪾ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                        InlineKeyboardButton('● ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
                      ]
                     ]
                 )
@@ -476,13 +476,13 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('𓆩sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ𓆪ꪾ', url=f'https://t.me/{SUPPORT_CHAT}'),
-              InlineKeyboardButton('𓆩ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ𓆪ꪾ', url=CHNL_LNK)
+              InlineKeyboardButton('● sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+              InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("𓆩ʙᴏᴛ ᴏᴡɴᴇʀ𓆪ꪾ", url="t.me/KK_BOTS")
+              InlineKeyboardButton("● ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/KK_BOTS")
              ],
              [
-              InlineKeyboardButton('𓆩ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ𓆪ꪾ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('● ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
