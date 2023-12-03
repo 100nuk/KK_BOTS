@@ -60,7 +60,7 @@ async def start(client, message):
                 ],[
                   InlineKeyboardButton('● ᴋᴋ ʙᴏᴛᴅ', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', callback_data="kk_group")
+                    InlineKeyboardButton('● ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ', callback_data="kk_group")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEDbD5lJjbfX6hEyoONWpVkGbiMYF463QACJwEAAsiUZBTiPWKAkUSmmjAE") 
@@ -114,7 +114,7 @@ async def start(client, message):
                 ],[
                   InlineKeyboardButton('● ᴋᴋ ʙᴏᴛᴅ', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', callback_data="kk_group")
+                    InlineKeyboardButton('● ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ', callback_data="kk_group")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
