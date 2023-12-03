@@ -1301,7 +1301,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                   InlineKeyboardButton('● ᴋᴋ ʙᴏᴛs', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', callback_data='kk_group')
+                    InlineKeyboardButton('● ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ', callback_data='kk_group')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
