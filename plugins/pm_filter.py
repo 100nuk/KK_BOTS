@@ -1301,7 +1301,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                   InlineKeyboardButton('● ᴋᴋ ʙᴏᴛs', url='https://t.me/KK_BOTS')
                 ],[
-                    InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', url=CHNL_LNK)
+                    InlineKeyboardButton('● ᴊᴏɪɴ ᴄʜᴀɴɴʟᴇ', callback_data='kk_group')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1528,6 +1528,32 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "kk_group":
+        buttons = [[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/R_KOHLI")
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.GRP_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )    
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
@@ -1664,7 +1690,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "song":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KingVj01")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/R_KOHLI")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
