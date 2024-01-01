@@ -920,6 +920,17 @@ async def requests(bot, message):
                 InlineKeyboardButton('View Request', url=f"{reported_post.link}")
               ]]
         await message.reply_text("<b>Your request has been added! Please wait for some time.\n\nJoin Channel First & View Request</b>", reply_markup=InlineKeyboardMarkup(btn))
+        
+@Client.on_callback_query(filters.command('addpremium') & filters.user(ADMINS))
+async def vip1(bot,update):
+	id = update.message.reply_to_message.text.split("PREMIUM_USER")
+	user_id = id[1].replace(" ", "")
+	inlimit  = 53687091200
+	uploadlimit(int(user_id),53687091200)
+	usertype(int(user_id),"PREMIUM_USER")
+	addpre(int(user_id))
+	await update.message.edit("Added successfully To Premium and join @movie_a1")
+	await bot.send_message(user_id,"Hey Ur Upgraded To VIP 1 check your plan here /myplan")
     
 @Client.on_message(filters.command("send") & filters.user(ADMINS))
 async def send_msg(bot, message):
