@@ -922,8 +922,8 @@ async def requests(bot, message):
         await message.reply_text("<b>Your request has been added! Please wait for some time.\n\nJoin Channel First & View Request</b>", reply_markup=InlineKeyboardMarkup(btn))
         
 @Client.on_callback_query(filters.command('addpremium') & filters.user(ADMINS))
-async def vip1(bot,update):
-	id = update.message.reply_to_message.text.split("PREMIUM_USER")
+async def PREMIUM_USER(bot,update):
+	target_id = update.message.reply_to_message.text.split("PREMIUM_USER")
 	user_id = id[1].replace(" ", "")
 	inlimit  = 53687091200
 	uploadlimit(int(user_id),53687091200)
