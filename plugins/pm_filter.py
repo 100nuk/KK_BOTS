@@ -51,27 +51,115 @@ SPELL_CHECK = {}
 # ENABLE_SHORTLINK = ""
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
+async@Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
-    if message.chat.id != SUPPORT_CHAT_ID:
-        manual = await manual_filters(client, message)
-        if manual == False:
-            settings = await get_settings(message.chat.id)
-            try:
-                if settings['auto_ffilter']:
-                    await auto_filter(client, message)
-            except KeyError:
-                grpid = await active_connection(str(message.from_user.id))
-                await save_group_settings(grpid, 'auto_ffilter', True)
-                settings = await get_settings(message.chat.id)
-                if settings['auto_ffilter']:
-                    await auto_filter(client, message) 
-    else: #a better logic to avoid repeated lines of code in auto_filter function
-        search = message.text
-        temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
-        if total_results == 0:
+    settings = await get_settings(message.chat.id)
+    if settings["auto_filter"]:
+        if message.chat.id == SUPPORT_GROUP:
+            files, offset, total = await get_search_results(message.text, offset=0, filter=True)
+            if files:
+                btn = [[
+                    InlineKeyboardButton("● ʜᴇʀᴇ", url='https://t.me/movie_on1')
+                ]]
+                await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
             return
+            
+        if message.text.startswith("/"):
+            return
+            
+        elif '@admin' in message.text.lower() or '@admins' in message.text.lower():
+            if await is_check_admin(client, message.chat.id, message.from_user.id):
+                return
+            admins = []
+            async for member in client.get_chat_members(chat_id=message.chat.id, filter=enums.ChatMembersFilter.ADMINISTRATORS):
+                if not member.user.is_bot:
+                    admins.append(member.user.id)
+                    if member.status == enums.ChatMemberStatus.OWNER:
+                        if message.reply_to_message:
+                            try:
+                                sent_msg = await message.reply_to_message.forward(member.user.id)
+                                await sent_msg.reply_text(f"#Attention\n★ User: {message.from_user.mention}\n★ Group: {message.chat.title}\n\n★ <a href={message.reply_to_message.link}>Go to message</a>", disable_web_page_preview=True)
+                            except:
+                                pass
+                        else:
+                            try:
+                                sent_msg = await message.forward(member.user.id)
+                                await sent_msg.reply_text(f"#Attention\n★ User: {message.from_user.mention}\n★ Group: {message.chat.title}\n\n★ <a href={message.link}>Go to message</a>", disable_web_page_preview=True)
+                            except:
+                                pass
+            hidden_mentions = (f'[\u2064](tg://user?id={user_id})' for user_id in admins)
+            await message.reply_text('Report sent!' + ''.join(hidden_mentions))
+            return
+
+        elif re.findall(r'https?://\S+|www\.\S+|t\.me/\S+', message.text):
+            if await is_check_admin(client, message.chat.id, message.from_user.id):
+                return
+            await message.delete()
+            return await message.reply('Links not allowed here!')
+        
+        elif '#request' in message.text.lower():
+            if message.from_user.id in ADMINS:
+                return
+            await client.send_message(LOG_CHANNEL, f"#Request\n★ User: {message.from_user.mention}\n★ Group: {message.chat.title}\n\n★ Message: {re.sub(r'#request', '', message.text.lower())}")
+            await message.reply_text("Request sent!")
+            return
+            
+        userid = message.from_user.id if message.from_user else None
+        if not userid:
+            search = message.text
+            k = await message.reply(f"You'r anonymous admin! Sorry you can't get '{search}' from here.\nYou can get '{search}' from bot inline search.")
+            await asyncio.sleep(30)
+            await k.delete()
+            try:
+                await message.delete()
+            except:
+                pass
+            return
+
+        verify_status = await get_verify_status(message.from_user.id)
+        if verify_status['is_verified'] and VERIFY_EXPIRE < (time.time() - verify_status['verified_time']):
+            await update_verify_status(message.from_user.id, is_verified=False)
+
+        verify_status = await get_verify_status(message.from_user.id)
+        btn = await is_subscribed(client, message, settings['fsub']) # This func is for custom fsub channels
+        if btn:
+            btn.append(
+                [InlineKeyboardButton("🔁 Request Again 🔁", callback_data="grp_checksub")]
+            )
+            reply_markup = InlineKeyboardMarkup(btn)
+            k = await message.reply_photo(
+                photo=random.choice(PICS),
+                caption=f"👋 Hello {message.from_user.mention},\n\nPlease join my 'Updates Channel' and request again. 😇",
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
+            await asyncio.sleep(300)
+            await k.delete()
+            try:
+                await message.delete()
+            except:
+                pass
+        elif IS_VERIFY and not verify_status['is_verified']:
+            btn = [[
+                InlineKeyboardButton("🛠 Click To Verify 🛠", url=f'https://t.me/{temp.U_NAME}?start=inline_verify')
+            ]]
+            k = await message.reply(f"You not verified today!. 🤦‍♂️", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+            await asyncio.sleep(300)
+            await k.delete()
+            try:
+                await message.delete()
+            except:
+                pass
         else:
-            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. \n\nTʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nJᴏɪɴ ᴀɴᴅ Sᴇᴀʀᴄʜ Hᴇʀᴇ - https://t.me/movie_on1</b>")
+            await auto_filter(client, message)
+    else:
+        k = await message.reply_text('Auto Filter Off! ❌')
+        await asyncio.sleep(5)
+        await k.delete()
+        try:
+            await message.delete()
+        except:
+            pass
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
