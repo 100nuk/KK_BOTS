@@ -51,7 +51,6 @@ SPELL_CHECK = {}
 # ENABLE_SHORTLINK = ""
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
-async@Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     settings = await get_settings(message.chat.id)
     if settings["auto_filter"]:
