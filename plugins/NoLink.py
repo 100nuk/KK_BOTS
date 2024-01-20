@@ -40,16 +40,9 @@ Bot = Client(
 async def nolink(bot,message):
         
 	try:
-                 
-                buttons = [[
-                    InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', url='https://t.me/+e_UqPGvuQ5E5NGU1')
-                ]]
-                reply_markup = InlineKeyboardMarkup(buttons)
-                k = await message.reply_sticker("CAACAgUAAxkBAAEDuvRlqTOJi1ITO6OHtEx8YKuqiZ4XnAACLgADwSQxMY0Ma6d3tUJFNAQ") 
-                await asyncio.sleep(2)      
-                k = await k.delete()
+               k = await k.delete()
                 hmm = await message.delete()
-                return
+                return await message.reply_sticker("CAACAgUAAxkBAAEDuvRlqTOJi1ITO6OHtEx8YKuqiZ4XnAACLgADwSQxMY0Ma6d3tUJFNAQ")
                 
 
 
