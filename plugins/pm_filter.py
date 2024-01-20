@@ -65,11 +65,11 @@ async def give_filter(client, message):
                 settings = await get_settings(message.chat.id)
                 if settings['auto_ffilter']:
                     await auto_filter(client, message) 
-     elif re.findall(r'https?://\S+|www\.\S+|t\.me/\S+|@\S+', message.text):
-            if await is_check_admin(client, message.chat.id, message.from_user.id):
-                return
-            await message.delete()
-            return await message.reply('Links not allowed here!')
+    elif re.findall(r'https?://\S+|www\.\S+|t\.me/\S+|@\S+', message.text):
+           if await is_check_admin(client, message.chat.id, message.from_user.id):
+               return
+           await message.delete()
+           return await message.reply('Links not allowed here!')
     else: #a better logic to avoid repeated lines of code in auto_filter function
         search = message.text
         temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
