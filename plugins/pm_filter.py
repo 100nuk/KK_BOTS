@@ -88,7 +88,8 @@ async def give_filter(client, message):
             hidden_mentions = (f'[\u2064](tg://user?id={user_id})' for user_id in admins)
             await message.reply_text('Report sent!' + ''.join(hidden_mentions))
             return
-    elif re.findall(r'https?://\S+|www\.\S+|t\.me/\S+|@\S+', message.text):
+        
+    async def findall(r'https?://\S+|www\.\S+|t\.me/\S+|@\S+', message.text):
            if await is_check_admin(client, message.chat.id, message.from_user.id):
                return
            await message.delete()
