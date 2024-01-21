@@ -40,10 +40,19 @@ Bot = Client(
 async def nolink(bot,message):
         
 	try:
-            if await is_check_admin(client, message.chat.id, message.from_user.id):
+                 
+                buttons = [[
+                    InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', url='https://t.me/+e_UqPGvuQ5E5NGU1')
+                ]]
+                reply_markup = InlineKeyboardMarkup(buttons)
+		await is_check_admin(client, message.chat.id, message.from_user.id):
                 return
-            await message.delete()
-            return await message.reply('Links not allowed here!')
+                hmm = await message.delete()
+		k = await message.reply_sticker("CAACAgUAAx0CXPjPGAACAmVkAAHLpxQlUkQIctGPhN_l36xk9psAAlcJAAKTvwlU-kg3cws4x6geBA") 
+                await asyncio.sleep(2)
+		k = await k.delete()
+                return 
+                
 
 
 	except:
