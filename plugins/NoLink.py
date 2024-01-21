@@ -44,12 +44,12 @@ async def nolink(bot,message):
                 buttons = [[
                     InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', url='https://t.me/+e_UqPGvuQ5E5NGU1')
                 ]]
-                reply_markup = InlineKeyboardMarkup(button)
+                reply_markup = InlineKeyboardMarkup(buttons)
+                k = await message.reply_sticker("CAACAgUAAx0CXPjPGAACAmVkAAHLpxQlUkQIctGPhN_l36xk9psAAlcJAAKTvwlU-kg3cws4x6geBA") 
+                await asyncio.sleep(2)      
+                k = await k.delete()
                 hmm = await message.delete()
-		k = await message.reply_sticker("CAACAgUAAx0CXPjPGAACAmVkAAHLpxQlUkQIctGPhN_l36xk9psAAlcJAAKTvwlU-kg3cws4x6geBA") 
-                await asyncio.sleep(2)
-		k = await k.delete()
-                return 
+                return
                 
 
 
