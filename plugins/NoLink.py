@@ -45,6 +45,7 @@ async def nolink(bot,message):
                     InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', url='https://t.me/+e_UqPGvuQ5E5NGU1')
                 ]]
                 reply_markup = InlineKeyboardMarkup(buttons)
+		
 		await is_check_admin(client, message.chat.id, message.from_user.id):
                 return
                 hmm = await message.delete()
