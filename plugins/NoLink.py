@@ -40,10 +40,10 @@ Bot = Client(
 async def nolink(bot,message):
         
 	try:
-               k = await k.delete()
-                hmm = await message.delete()
-                return await message.reply_sticker("CAACAgUAAxkBAAEDuvRlqTOJi1ITO6OHtEx8YKuqiZ4XnAACLgADwSQxMY0Ma6d3tUJFNAQ")
-                
+            if await is_check_admin(client, message.chat.id, message.from_user.id):
+                return
+            await message.delete()
+            return await message.reply('Links not allowed here!')
 
 
 	except:
