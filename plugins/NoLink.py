@@ -44,10 +44,7 @@ async def nolink(bot,message):
                 buttons = [[
                     InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', url='https://t.me/+e_UqPGvuQ5E5NGU1')
                 ]]
-                reply_markup = InlineKeyboardMarkup(buttons)
-		
-		await is_check_admin(client, message.chat.id, message.from_user.id):
-                return
+                reply_markup = InlineKeyboardMarkup(button)
                 hmm = await message.delete()
 		k = await message.reply_sticker("CAACAgUAAx0CXPjPGAACAmVkAAHLpxQlUkQIctGPhN_l36xk9psAAlcJAAKTvwlU-kg3cws4x6geBA") 
                 await asyncio.sleep(2)
