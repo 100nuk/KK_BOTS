@@ -41,7 +41,7 @@ async def nolink(bot,message):
         
 	try:
                  
-                if await is_check_admin(client, message.chat.id, message.from_user.id):
+            if await is_check_admin(client, message.chat.id, message.from_user.id):
                 return
                 reply_markup = InlineKeyboardMarkup(buttons)
                 hmm = await message.delete()
