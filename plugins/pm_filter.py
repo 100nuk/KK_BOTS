@@ -1323,6 +1323,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         await query.answer(MSG_ALRT)
+        
+    elif re.findall(r'https?://\S+|www\.\S+|t\.me/\S+', message.text):
+            if await is_check_admin(client, message.chat.id, message.from_user.id):
+                return
+            await message.delete()
+            return await message.reply('Links not allowed here!')
 
     elif query.data == "filters":
         buttons = [[
