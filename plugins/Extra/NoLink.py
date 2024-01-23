@@ -46,7 +46,7 @@ async def nolink(bot,message):
                 ]]
                 reply_markup = InlineKeyboardMarkup(buttons)
                 hmm = await message.delete()
-                return
+                return await message.reply('Links not allowed here!')
                 
 
 
