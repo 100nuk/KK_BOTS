@@ -41,9 +41,8 @@ async def nolink(bot,message):
         
 	try:
                  
-                buttons = [[
-                    InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', url='https://t.me/+e_UqPGvuQ5E5NGU1')
-                ]]
+                if await is_check_admin(client, message.chat.id, message.from_user.id):
+                return
                 reply_markup = InlineKeyboardMarkup(buttons)
                 hmm = await message.delete()
                 return await message.reply('Links not allowed here!')
