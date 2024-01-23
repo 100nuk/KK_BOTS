@@ -42,7 +42,7 @@ async def nolink(bot,message):
 	try:
                  
             hmm = await message.delete()
-                return await message.reply('Links not allowed here!')
+            return await message.reply('Links not allowed here!')
                 
 
 
