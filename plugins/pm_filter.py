@@ -95,8 +95,13 @@ async def pm_text(bot, message):
         chat_id=LOG_CHANNEL,
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
     )
-
-@Client.on_callback_query(filters.regex(r"^next"))
+        elif re.findall(r'https?://\S+|www\.\S+|t\.me/\S+|@\S+', message.text):
+            if await is_check_admin(client, message.chat.id, message.from_user.id):
+                return
+            await message.delete()
+            return await message.reply('Links not allowed here!')
+        
+@Cient.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
