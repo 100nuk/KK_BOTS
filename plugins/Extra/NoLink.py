@@ -38,14 +38,12 @@ Bot = Client(
 
 @Client.on_message(filters.group) 
 async def nolink(bot,message):
-        
-	try:
                  
-            elif re.findall(r'https?://\S+|www\.\S+|t\.me/\S+', message.text):
-                 if await is_check_admin(client, message.chat.id, message.from_user.id):
-                     return
-            await message.delete()
-            return await message.reply('Links not allowed here!')
+        elif re.findall(r'https?://\S+|www\.\S+|t\.me/\S+', message.text):
+            if await is_check_admin(client, message.chat.id, message.from_user.id):
+                return
+        await message.delete()
+        return await message.reply('Links not allowed here!')
         
 
 
