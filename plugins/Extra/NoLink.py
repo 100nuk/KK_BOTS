@@ -41,9 +41,11 @@ async def nolink(bot,message):
 
 	if user_id in ADMINS: return # ignore admins
 	try:
-		
-            hmm = await message.delete()
-            return await message.reply('Links not allowed here!')
+
+	    if await is_check_admin(client, message.chat.id, message.from_user.id):
+                return
+                hmm = await message.delete()
+                return await message.reply('Links not allowed here!')
                 
 
 
