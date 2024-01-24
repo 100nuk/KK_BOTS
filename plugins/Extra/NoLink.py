@@ -39,7 +39,6 @@ Bot = Client(
 @Client.on_message((filters.group) & filters.regex("@")  | filters.regex("t.me"))
 async def nolink(bot,message):
 
-	if user_id in ADMINS: return # ignore admins
 	try:
 
 	    if await is_check_admin(client, message.chat.id, message.from_user.id):
