@@ -38,11 +38,11 @@ Bot = Client(
 
 @Client.on_message((filters.group) & filters.regex("@")  | filters.regex("t.me"))
 async def nolink(bot,message):
-        
-	try:
 
-	    if user_id in ADMINS: return # ignore admins	
-            await message.delete()
+	if user_id in ADMINS: return # ignore admins
+	try:
+		
+            hmm = await message.delete()
             return await message.reply('Links not allowed here!')
                 
 
