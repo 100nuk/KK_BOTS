@@ -42,7 +42,7 @@ async def nolink(bot,message):
 	try:
 
 	    if user_id in ADMINS: return # ignore admins	
-            hmm = await message.delete()
+            await message.delete()
             return await message.reply('Links not allowed here!')
                 
 
