@@ -8,7 +8,7 @@ from info import SUPPORT_CHAT
 import os
 from pyrogram import Client, filters, enums
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
-from utils import extract_user, get_file_id, get_poster, last_online
+from utils import extract_user, get_file_id, get_poster, last_online, is_check_admin
 import time
 from datetime import datetime
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
@@ -40,7 +40,9 @@ Bot = Client(
 async def nolink(bot,message):
         
 	try:
-                 
+
+            if await is_check_admin(client, message.chat.id, message.from_user.id):
+                return
             hmm = await message.delete()
             return await message.reply('Links not allowed here!')
                 
