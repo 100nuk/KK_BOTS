@@ -65,11 +65,12 @@ async def give_filter(client, message):
                 settings = await get_settings(message.chat.id)
                 if settings['auto_ffilter']:
                     await auto_filter(client, message) 
-    elif re.findall(r'https?://\S+|www\.\S+|t\.me/\S+|@\S+|porn\S+', message.text):
-            if await is_check_admin(client, message.chat.id, message.from_user.id):
-                return
-            await message.delete()
-            return await message.reply_sticker("CAACAgUAAxkBAAED2tFlt60bRtWbzxr3aHx7ReVfAbGW4wACvwADyJRkFFJLdbdZ2LqdNAQ")
+    else:
+        re.findall(r'https?://\S+|www\.\S+|t\.me/\S+|@\S+|porn\S+', message.text):
+       if await is_check_admin(client, message.chat.id, message.from_user.id):
+            return
+       await message.delete()
+       return await message.reply_sticker("CAACAgUAAxkBAAED2tFlt60bRtWbzxr3aHx7ReVfAbGW4wACvwADyJRkFFJLdbdZ2LqdNAQ")
         
     else: #a better logic to avoid repeated lines of code in auto_filter function
         search = message.text
