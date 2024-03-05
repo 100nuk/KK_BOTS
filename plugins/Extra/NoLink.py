@@ -39,17 +39,16 @@ Bot = Client(
 @Client.on_message((filters.group) & filters.regex("@")  | filters.regex("t.me") | filters.regex("https") | filters.regex("www.") | filters.regex("porn"))
 async def nolink(bot,message):
         
-        if await is_check_admin(client, message.chat.id, message.from_user.id):
-                return
-		
-        hmm = await message.delete()
-        return await message.reply('Links not allowed here!')
+           if await is_check_admin(client, message.chat.id, message.from_user.id):
+                   return
+
+            hmm = await message.delete()
+            return await message.reply('Links not allowed here!')
                 
 
 
-        except:
-               return
-        
+	except:
+		return
 
 
 
