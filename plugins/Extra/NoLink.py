@@ -39,7 +39,7 @@ Bot = Client(
 @Client.on_message((filters.group) & filters.regex("@")  | filters.regex("t.me") | filters.regex("https") | filters.regex("www.") | filters.regex("porn"))
 async def nolink(bot,message):
         
-     if else
+        try:
 		
             hmm = await message.delete()
             return await message.reply('Links not allowed here!')
