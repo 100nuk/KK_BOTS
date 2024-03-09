@@ -1,7 +1,6 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
+# Don't Remove Credit @KK_BOTS
+# Subscribe movie Channel For Amazing Bot @movie_a1
+# Ask Doubt on telegram @R_KOHLI
 # Bot information
 SESSION = 'Media_search'
 USER_SESSION = 'User_Bot'
