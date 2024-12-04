@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://kk-bot-7160e218a862.herokuapp.com/".format(FQDN)
+    URL = "https://collective-skunk-anantkohli-7c8458d2.koyeb.app/".format(FQDN)
 else:
-    URL = "https://kk-bot-7160e218a862.herokuapp.com/".format(FQDN)
+    URL = "https://collective-skunk-anantkohli-7c8458d2.koyeb.app/".format(FQDN)
 
 
 
