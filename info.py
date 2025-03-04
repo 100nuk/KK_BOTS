@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://collective-skunk-anantkohli-7c8458d2.koyeb.app/".format(FQDN)
+    URL = "https://wide-danya-anantkohli-1a13c551.koyeb.app/".format(FQDN)
 else:
-    URL = "https://collective-skunk-anantkohli-7c8458d2.koyeb.app/".format(FQDN)
+    URL = "https://wide-danya-anantkohli-1a13c551.koyeb.app/".format(FQDN)
 
 
 
